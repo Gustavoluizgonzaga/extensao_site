@@ -7,15 +7,11 @@ app = Flask(__name__)
 def homepage():
     return render_template('homepage.html')
 
-# definindo a página contato
-@app.route('/contato')
+# definindo a página de produtos
+@app.route('/produtos')
 def contato():
-    return render_template('contato.html')
+    return render_template('produtos.html')
 
-# definindo usuario
-@app.route('/usuario''/<nome_usuario>')
-def usuario(nome_usuario):
-    return render_template('usuario.html')
 
 
 # colocar o site no ar

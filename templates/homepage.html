@@ -6,8 +6,25 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
-<body>
-    <h2>Seja Bem Vindo(a)!</h2>
+
+<body style="background-color: #ddffcc">
+    <h1>Seja Bem Vindo(a)!</h1>
+    <h2>Este é um site feito para testes </h2>
+    <label for="minhaCaixaDeTexto">Procurar Produtos:</label>
+    <input type="text" id="minhaCaixaDeTexto" name="texto">
+    <style>
+    input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    </style>
+
+<ul>
+    <li><a href="produtos">Veja Nossos Produtos</a></li>
+</ul>
+
+
 
 </body>
-</html>
