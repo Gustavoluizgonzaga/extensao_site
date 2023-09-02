@@ -9,8 +9,13 @@ def homepage():
 
 # definindo a página de produtos
 @app.route('/produtos')
-def contato():
+def produto():
     return render_template('produtos.html')
+
+@app.route('/contato')
+def contato():
+    return render_template('contato.html')
+
 
 
 
