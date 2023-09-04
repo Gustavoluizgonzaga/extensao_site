@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-
 app = Flask(__name__)
 
 # definindo a página homepage
@@ -7,10 +6,18 @@ app = Flask(__name__)
 def homepage():
     return render_template('homepage.html')
 
+
+
 # definindo a página de produtos
 @app.route('/produtos')
-def produto():
+def produtos():
     return render_template('produtos.html')
+
+@app.route('/<nome_produto>')
+def produto(nome_produto):
+    return render_template('produto.html', nome_produto=nome_produto)
+
+
 
 @app.route('/contato')
 def contato():
