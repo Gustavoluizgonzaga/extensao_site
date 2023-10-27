@@ -6,25 +6,22 @@ app = Flask(__name__)
 def homepage():
     return render_template('homepage.html')
 
-
-
 # definindo a página de produtos
 @app.route('/produtos')
 def produtos():
     return render_template('produtos.html')
 
-@app.route('/<nome_produto>')
+@app.route('/produtos/<nome_produto>')
 def produto(nome_produto):
     return render_template('produto.html', nome_produto=nome_produto)
-
-
 
 @app.route('/contato')
 def contato():
     return render_template('contato.html')
 
-
-
+@app.route('/historia')
+def historia():
+    return render_template('historia.html')
 
 # colocar o site no ar
 if __name__ == '__main__':
