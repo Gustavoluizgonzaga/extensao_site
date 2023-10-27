@@ -23,6 +23,9 @@ def contato():
 def historia():
     return render_template('historia.html')
 
-# colocar o site no ar
+@app.route('/receitas')
+def receitas():
+    return render_template('receitas.html', receitas=receitas)
+
 if __name__ == '__main__':
     app.run(debug=True)
