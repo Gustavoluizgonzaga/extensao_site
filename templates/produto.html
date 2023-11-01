@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="static/img/Iconshow.png">
+    <link rel="shortcut icon" type="image/x-icon"  href="static/img/Iconshow.png">
     <title>{{ nome_produto }}</title>
 </head>
 <body style="background-color: #ddffcc">
     <h1>{{ nome_produto }}</h1>
 
-
-    <p>{{ receitas }} </p>
+    <h3><a href="/receitas">Receitas nutritivas com {{nome_produto.lower()}}</a></h3>
 
 
 
 <ul>
-    <li><a href="/">Retornar para a Homepage</a></li>
+    <li><a style="font-weight:bold;" href="/">Retornar para a Homepage</a></li>
 </ul>
 
 </body>

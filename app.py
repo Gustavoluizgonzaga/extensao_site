@@ -11,9 +11,14 @@ def homepage():
 def produtos():
     return render_template('produtos.html')
 
+
 @app.route('/produtos/<nome_produto>')
 def produto(nome_produto):
     return render_template('produto.html', nome_produto=nome_produto)
+
+@app.route('/receitas')
+def receitas():
+    return render_template('receitas.html')
 
 @app.route('/contato')
 def contato():
@@ -23,9 +28,7 @@ def contato():
 def historia():
     return render_template('historia.html')
 
-@app.route('/receitas')
-def receitas():
-    return render_template('receitas.html', receitas=receitas)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
